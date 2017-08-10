@@ -1,0 +1,132 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\froman\fcharset0 Times-Roman;
+\f3\fnil\fcharset0 LucidaGrande;\f4\fnil\fcharset134 STSongti-SC-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid1\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid101\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20480\viewh16500\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #####################################################################################################################################################\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Author:Krislei\
+Date:2017/08/08\
+Project:Zabbix Noc\
+Version:2.4.2\
+1.mail.sh
+\f1 \'b8\'fc\'b8\'c4\'d3\'ca\'cf\'e4\'b7\'a2\'bc\'fe\'d5\'df\'d0\'c5\'cf\'a2\
+
+\f0 2.InstallZabbixServer
+\f1 \'b8\'fc\'b8\'c4\'c8\'ed\'bc\'fe\'b0\'fc
+\f0 \
+#####################################################################################################################################################\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl480\partightenfactor0
+\ls1\ilvl0
+\f2\fs28 \cf2 {\listtext	
+\f3 \uc0\u9642 
+\f2 	}\expnd0\expndtw0\kerning0
+Server
+\f4 \'ba\'f3\'b6\'cb\'b2\'bf\'ca\'f0\'b0\'b2\'d7\'b0
+\f2 \
+\pard\pardeftab720\sl480\partightenfactor0
+\cf2 	1.wget http://ohdvv0x20.bkt.clouddn.com/zabbix_install.zip && unzip zabbix_install.zip\'a0 && chmod 777 ./* \'a0&& cd zabbix_install\'a0 && sh ./InstallZabbixAgent.sh\
+	2.
+\f4 \'b7\'c3\'ce\'ca
+\f2 http://IP:8888/zabbix
+\f4 ,\'d3\'c3\'bb\'a7\'c3\'fbadmin\'a3\'ac\'c3\'dc\'c2\'ebzabbix\
+	3.\'cc\'ed\'bc\'d3\'d6\'f7\'bb\'fa-\'cf\'ee\'c4\'bf-\'b4\'a5\'b7\'a2\'c6\'f7\
+	4.\'cc\'ed\'bc\'d3\'d3\'c3\'bb\'a7\'bb\'f2\'d3\'c3\'bb\'a7\'c8\'ba\'d7\'e9\
+	5.\'cc\'ed\'bc\'d3\'bd\'c5\'b1\'be\'b8\'e6\'be\'af\'b7\'bd\'ca\'bd,\'c3\'fb\'b3\'c6\'ce\'aamail.sh,\'b2\'a2\'c9\'e8\'d6\'c3\'b6\'af\'d7\'f7\
+	6.\'d6\'d8\'c6\'f4 service zabbix_server restart
+\f2 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl480\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f3 \uc0\u9642 
+\f2 	}\expnd0\expndtw0\kerning0
+Agent
+\f4 \'bd\'da\'b5\'e3\'b2\'bf\'ca\'f0\'b0\'b2\'d7\'b0
+\f2 \
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f4 \cf2 	
+\f2 Linux
+\f4 \'cf\'b5\'cd\'b3\'b2\'bf\'ca\'f0
+\f2 Agent\
+		wget http://ohdvv0x20.bkt.clouddn.com/zabbix_install.zip && unzip zabbix_install.zip\'a0 && chmod 777 ./* \'a0&& cd zabbix_install\'a0 && sh ./InstallZabbixAgent.sh\
+\pard\tx566\pardeftab720\sl480\partightenfactor0
+\cf2 	  Windows
+\f4 \'cf\'b5\'cd\'b3\'b2\'bf\'ca\'f0
+\f2 Agent\
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f4 \cf2 		1.\'cf\'c2\'d4\'d8Agent\'a3\'ba
+\f2 http://ohdvv0x20.bkt.clouddn.com/zabbix_install.zip\
+
+\f4 		2.\'d0\'de\'b8\'c4\'c5\'e4\'d6\'c3\'ce\'c4\'bc\'fe(\'d2\'d4\'b0\'b2\'d7\'b0\'c2\'b7\'be\'b6
+\f2 D
+\f4 :
+\f2 \\zabbix-2.4.6
+\f4 \'ce\'aa\'c0\'fd)
+\f2 \
+			
+\f4 \'b4\'f2\'bf\'aa
+\f2 \'93D
+\f4 :
+\f2 \\zabbix-2.4.6\\conf\\ zabbix_agentd.conf\'94\
+			Server=
+\f4 \'bc\'e0\'bf\'d8\'bb\'fa\'b5\'c4
+\f2 ip\
+			Hostname=linux server1 #
+\f4 \'d6\'b8\'b6\'a8\'d6\'f7\'bb\'fa\'c3\'fb\'b3\'c6\'a3\'a8\'bf\'c9\'d2\'d4\'b2\'bb\'cc\'ee\'d0\'b4\'a3\'a9
+\f2 \
+			PidFile= D:\\zabbix-2.4.6\\zabbix_agentd.pid #
+\f4 \'d6\'b8\'b6\'a8
+\f2 pid
+\f4 \'ce\'c4\'bc\'fe
+\f2 \
+\'a0			LogFile= D:\\zabbix-2.4.6\\zabbix_agentd.log #
+\f4 \'d6\'b8\'b6\'a8
+\f2 log
+\f4 \'ce\'c4\'bc\'fe
+\f2 \
+
+\f4 		3.\'b0\'b2\'d7\'b0\'c6\'f4\'b6\'af
+\f2 zabbix_agentd
+\f4 \'b7\'fe\'ce\'f1
+\f2 \
+
+\f4 			\'b8\'f9\'be\'dd\'d7\'d4\'c9\'ed\'cf\'b5\'cd\'b3\'c5\'d0\'b6\'a8\'d1\'a1\'d4\'f1
+\f2 32
+\f4 \'ce\'bb\'bb\'f2\'d5\'df
+\f2 64
+\f4 \'ce\'bb\'c4\'bf\'c2\'bc
+\f2 \
+
+\f4 			\'bd\'f8\'c8\'eb\'a1\'b1
+\f2 D:\\zabbix-2.4.6\\bin\\win64\'94\
+			zabbix_agentd.exe \'96c D
+\f4 \'a3\'ba
+\f2 \\zabbix-2.4.6\\conf\\ zabbix_agentd.conf -i
+\f4 \'a3\'a8\'b0\'b2\'d7\'b0
+\f2 zabbix
+\f4 \'bf\'cd\'bb\'a7\'b6\'cb\'a3\'a9
+\f2 \
+			zabbix_agentd.exe \'96c D
+\f4 \'a3\'ba
+\f2 \\zabbix-2.4.6\\conf\\ zabbix_agentd.conf -s
+\f4 \'a3\'a8\'c6\'f4\'b6\'af
+\f2 zabbix
+\f4 \'bf\'cd\'bb\'a7\'b6\'cb\'a3\'a9\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 #####################################################################################################################################################\
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f2\fs28 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+\
+\
+}
